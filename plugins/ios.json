@@ -1,0 +1,90 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-androidx": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-androidx-adapter": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-camera": {
+      "CAMERA_USAGE_DESCRIPTION": " ",
+      "PHOTOLIBRARY_USAGE_DESCRIPTION": " ",
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-datepicker": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-file-opener2": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-http": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-telerik-imagepicker": {
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "App wants to access your gallery",
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-x-socialsharing": {
+      "PHOTO_LIBRARY_ADD_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+      "PHOTO_LIBRARY_USAGE_DESCRIPTION": "This app requires photo library access to function properly.",
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-x-toast": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-sqlite-storage": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "ionic-plugin-keyboard": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "mx.ferreyra.callnumber": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "net.easycarcare"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "net.easycarcare"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "net.easycarcare"
+    }
+  }
+}
