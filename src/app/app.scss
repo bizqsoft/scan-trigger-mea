@@ -14,3 +14,85 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+:root {
+    font-family: 'Mukta', sans-serif;
+    --fontFamily1: 'Poppins', sans-serif;
+    --fontFamily2: 'Open Sans', sans-serif;
+    --fontFamily3: 'sukhumvit_tadmaimedium',Arial, sans-serif;
+    --fontFamily8: 'revaliaregular',Arial, sans-serif;
+    --fontFamily5: 'sukhumvit_tadmaibold',Arial, sans-serif;
+    --fontFamily6: 'sukhumvit_tadmaiextrabold',Arial, sans-serif;
+    --fontFamily7: 'sukhumvit_tadmaimedium',Arial, sans-serif;
+    --fontFamily9: 'TwCenMT-CondensedBold';
+    --fontFamily4: 'TwCenMT-Condensed';
+    --mainColor: #ffffff;
+    --optionalColor: #0eb582;
+    --whiteColor: #ffffff;
+    --blackColor: #2C2C2C;
+    --paragraphColor: #727695;
+    --fontSize: 0.9375rem;
+    --transition: .5s;
+    --softColor:#f1f0ec;
+    --footerColor: #ffffff;
+    --footerBgColor: #1c2b49;
+    --footerBorderColor: #003748;
+    --primaryColor:#38539a;
+    --secondColor:#c3c3c3;
+    --redColor:#f2782edb;
+}
+
+@font-face {
+    font-family: "TwCenMT-CondensedBold";
+  
+    src: url("../assets/fonts/TCCB.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "TwCenMT-Condensed";
+  
+    src: url("../assets/fonts/TCCM.woff") format("woff"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'revaliaregular';
+    src: url('../assets/fonts/revalia-regular.woff2') format('woff2'),
+         url('../assets/fonts/revalia-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sukhumvit_tadmaibold';
+    src: url('../assets/fonts/sukhumvittadmai-bold.woff2') format('woff2'),
+         url('../assets/fonts/sukhumvittadmai-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'sukhumvit_tadmaiextrabold';
+    src: url('../assets/fonts/sukhumvittadmai-extrabold.woff2') format('woff2'),
+         url('../assets/fonts/sukhumvittadmai-extrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'sukhumvit_tadmaimedium';
+    src: url('../assets/fonts/sukhumvittadmai-medium.woff2') format('woff2'),
+         url('../assets/fonts/sukhumvittadmai-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{
+    font-family: sukhumvit_tadmaimedium;
+}

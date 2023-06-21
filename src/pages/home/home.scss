@@ -1,3 +1,281 @@
-page-home {
+
+
+.card-background-page {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+  
+    .card-title {
+      position: absolute;
+      top: 36%;
+      font-size: 1.0em;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+    }
+  
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+
+
+
+
+  
+  }
+
+  .button-ios {
+    border-radius: 4px;
+    height: 2.8em;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #f2782edb;
+    margin: 0.4rem 0.2rem;
+    padding: 0 1em;
+}
+
+
+  .segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #f2782edb;
+    color:#ffffff;
+    background-color: #f2782edb;
+    opacity: 1;
+    border-radius: 0px;
 
 }
+
+.segment-md .segment-button{
+  background-color: antiquewhite;
+  border-radius: 0px;
+}
+  .card-subtitle-p {
+    font-size: 1.0em;
+    position: absolute;
+    top: 72%;
+    width: 100%;
+    color: #000;
+  }
+  .top-header-home{
+      margin:0px;
+      height: 88px;
+      //width: 100%;
+      //background-image: url('http://qrcode-yamasei.com/bg/bg-head-1.jpg');
+      background-color: #758690;
+      background-repeat: no-repeat;
+      background-size: 1200px;
+      
+    }
+    .top-header-home-user-1{
+      margin:0px;
+
+      height: 142px;
+      //width: 100%;
+      //background-image: url('http://qrcode-yamasei.com/bg/bg-head-1.jpg');
+      background-color: #758690;
+      background-repeat: no-repeat;
+      background-size: 1200px;
+      
+    }
+  .card-title {
+        position: absolute;
+        padding: 2px;
+        top: 10%;
+        font-size: 16px;
+        width: 100%;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+      }
+  .card-subtitle {
+        padding: 12px;
+        font-size: 1.0em;
+        position: absolute;
+        text-align: center;
+        top: 30%;
+        width: 100%;
+        color: #fff;
+  }
+  
+  .img-profile{
+          padding: 10px;
+
+        img {
+          
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+        }
+      }
+
+      div.center-cropped {
+        width: 100px;
+        height: 70px;
+        margin-top: 6px;
+        overflow: hidden;
+      }
+      div.center-cropped img {
+        height: 100%;
+        min-width: 100%;
+        left: 50%;
+        position: relative;
+        border-radius: 50%;
+        transform: translateX(- 50%);
+      }
+      .block-package{
+        padding: 0px;
+        font-size: 14px;
+        color: #fff;
+        text-align: left;
+        vertical-align: middle;
+        background-color: #f2782edb;
+        height: 5px;
+        width: 100%;
+    
+
+      }
+      .home-icon{
+        margin: auto;
+        font-size: 30px;
+        padding: 2px;
+        text-align: center;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        margin-top: 10px;
+        //background-color: #d3caca;
+      }
+
+      .home-text-icon{
+       font-size: 16px;
+        text-align: center;
+      }
+
+      .block-menu{
+        cursor: pointer;
+        padding: 1px;
+        border-radius: 25px;
+        font-size: 14px;
+        color: #000000;
+        text-align: left;
+        vertical-align: middle;
+        background-color: #fff;
+        height: 95px;
+        width: 100%;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #ccc;
+        background-color: #f2782edb;
+        
+      }
+      .block-head{
+        border-radius: 20px;
+        margin-top:2px;
+        border-style: solid;
+        border-width: 1.2px;
+        border-color: #000;
+        color: rgb(230, 180, 19);
+        text-align: center;
+        background-color: #fff;
+        padding:8px;
+        height: 60px;
+        width: 100%;
+        font-size: 12px;
+      }
+      .text-header-left{
+        vertical-align: middle;
+        font-size: 16px;
+        color: #000;
+        text-align: left;
+        padding:0px;
+      }
+      .text-center{
+        vertical-align: middle;
+        font-size: 18px;
+        color: #000;
+        text-align: center;
+        padding:0px;
+      }
+      .text-left{
+        vertical-align: middle;
+        font-size: 8px;
+        color: #000;
+        text-align: left;
+        padding:0px;
+      }
+
+      .text-top{
+        vertical-align: top;
+        font-size: 10px;
+        
+        color: #000;
+        text-align: center;
+        padding:0px;
+      }
+      .text-bottom{
+        vertical-align: baseline;
+        font-size: 12px;
+        color: #000;
+        text-align: center;
+        padding:0px;
+      }
+      .text-medium{
+        vertical-align: baseline;
+        font-size: 14px;
+        color: #000;
+        text-align: center;
+        padding:0px;
+      }
+      .text-small-baseline{
+        vertical-align: middle;
+        font-size: 8px;
+        color: #000;
+        padding:0px;
+      }
+      .icon-center{
+        vertical-align: middle;
+        font-size: 40px;
+        color: #000;
+        text-align: center;
+        padding:0px;
+      }
+      .text{
+        vertical-align: middle;
+        font-size: 18px;
+        color: #000;
+        text-align: center;
+        padding:0px;
+      }
+      .text-left{
+        vertical-align: middle;
+        font-size: 18px;
+        color: #000;
+        text-align: left;
+        padding:0px;
+      }
+      .text-right{
+        vertical-align: middle;
+        font-size: 18px;
+        color: #000;
+        text-align: right;
+        padding:0px;
+      }
+      .text-small{
+        vertical-align: middle;
+        font-size: 12px;
+        color: #000;
+        text-align: left;
+        padding:0px;
+      }
+
+      .div-border{
+        border-style: solid;
+        border-width: 2px;
+        border-color: rgb(230, 180, 19);
+      }

@@ -1,0 +1,125 @@
+<ion-content>
+    <div style="height:8px;background-color:#b8db32"></div>
+    <div *ngIf="ckScan==true">
+        <ion-item class="pd-0">
+            <ion-input autofocus="true" [(ngModel)]="revScanValue" (keyup.enter)="scan($event)" class="scan-input"
+                type="text" placeholder="{{guide}}"></ion-input>
+        </ion-item>
+    </div>
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+    <div *ngIf="ckSave!=true && step3==true" class="warning-box">{{warningBeforeSave}} <ion-icon name="send"></ion-icon>
+    </div>
+    <div *ngIf="ckSave==true" class="failed-box">ส่งข้อมูลสำเร็จ</div>
+    <ion-grid>
+        <div style="margin-top:10px;"></div>
+        <div style="text-align: center;" class="col-md-12" *ngIf="ckLoad==true">
+            <img style="width: 50%;" src="assets/img/custom-icons/loader-5.gif">
+            <p><label>กำลังดำเนินการ...</label></p>
+        </div>
+        <div *ngIf="ckSave==true">
+            <div *ngFor="let item of successItems;let i=index;">
+                <div class="success-box-list">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <ion-col col-11>
+                                <div class="list-box-success">
+                                    <div class="title"><span>{{item.partno}}</span></div>
+                                    <div class="sub-title"><span>{{item.kanban}} {{item.remain}}| {{item.txtStatus}}
+                                        </span></div>
+                                </div>
+                            </ion-col>
+                            <ion-col col-1 (click)="showPromptSucess(item.scanId,i)">
+                                <div class="btn-box-in-list-failed">
+                                    <ion-icon name="md-close"></ion-icon>
+                                </div>
+                            </ion-col>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="scanItems.length>0 && ckSave!=true">
+                <div class="col-md-12" *ngFor="let item of scanItems;let i=index;">
+                    <div class="row">
+                        <ion-col col-10>
+                            <div class="list-box">
+                                <div class="title"><span>{{item.partno}}</span></div>
+                                <div class="sub-title" *ngIf="scanMonitorShow==true && process!='pd-final'">
+                                    <span>Serial no / {{item.location}}</span></div>
+                                <div class="sub-title-failed"><span>{{item.txtStatus}}</span></div>
+                            </div>
+                        </ion-col>
+                        <ion-col col-2>
+                            <div class="row">
+                                <div class="btn-circle" (click)="showPrompt(item.scanId,i)">
+                                    <ion-icon name="md-close"></ion-icon>
+                                </div>
+                            </div>
+                        </ion-col>
+                    </div>
+                </div>
+        </div>
+    </ion-grid>
+    <div>
+        <ion-list>
+            <ion-item>
+              <ion-label>เลือกหัวข้อทดสอบ</ion-label>
+              <ion-select (ionChange)="handleChange($event)" [(ngModel)]="testItemSelected">
+                <ion-option *ngFor="let item of testItems" value="{{item.id}}">{{item.name}}</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-list>
+    </div>
+    <div>
+        <ion-grid>
+            <ion-row>
+                <ion-col size="2">
+                    <div class="box-img" *ngIf="isLoading">
+                        <div class="box-loading">
+                            <img src="./assets/img/loading.gif">
+                        </div>
+                    </div>
+                    <div class="box-img" *ngIf="!isLoading">
+                        <label for="file-input">
+                            <img src="./assets/img/custom-icons/ea-add-1.png"/>
+                        </label>
+                        <input style="padding-left: 20px;display: none;" id="file-input" type="file" (change)="onSelectFile($event)" multiple/>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                   
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+
+    <!---result-->
+    <div>
+
+    </div>
+    <!-- this fab is placed at bottom right -->
+</ion-content>
+
+<ion-footer>
+    <div style="height:6px;background-color: red;"></div>
+    <div class="footer-scan">
+        <div class="row">
+            <div class="circle" (click)="home()"><ion-icon name="logo-windows"></ion-icon></div>
+            <div class="circle" (click)="back()"><ion-icon name="arrow-back"></ion-icon></div>
+            <div *ngIf="step3!=true" class="circle" (click)="next()"><ion-icon name="arrow-forward"></ion-icon></div>
+            <div *ngIf="step3==true" class="circle"><ion-icon name="arrow-forward"></ion-icon></div>
+            <div class="circle" (click)="resetPrompt()"><ion-icon name="refresh"></ion-icon></div>
+            <div *ngIf="step3==true && arrCk.length == 0" class="circle" (click)="savePrompt()">
+                <ion-icon
+                    name="send"></ion-icon>
+
+            </div>
+        </div>
+
+    </div>
+</ion-footer>

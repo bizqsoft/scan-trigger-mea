@@ -1,14 +1,92 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
-</ion-header>
+  <ion-row>
+    <ion-col col-2 style="text-align: center;">
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-col>
+    <ion-col col-10 style="padding-top:10px;padding-bottom:10px;font-size:10px;background-color: white;">
+        <div style="border-radius: 4px;height:43px;padding-top:8px;text-align:center;color:white;font-size:18px;background-color: #f2782edb;"><strong>{{sysName}} {{sysVersion}}</strong></div>
+  </ion-col>
+</ion-row>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
-</ion-content>
+                <div class="top-header-home">
+                  <ion-row>
+                    <ion-col col-3>
+                           <div class="center-cropped">
+                            <img src="assets/img/logo.png">
+                           </div>
+                    </ion-col>
+                    <ion-col col-9>
+                        <div class="card-title">การไฟฟ้านครหลวง</div>
+                        <div class="card-subtitle">ระบบติดตามสถานะการทดสอบและสอบเทียบ</div>
+                        <div class="card-subtitle" style="margin-top:20px;">{{d}}</div>
+                      </ion-col>
+                    </ion-row>
+                </div>  
+
+
+  <div style="margin-top:0px;padding-top:0px;" class="block-package">
+
+  </div>
+  </ion-header>
+
+  <ion-content>
+  
+      <ion-refresher (ionRefresh)="doRefresh($event)">
+          <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+        <div style="margin-top: 20px;">
+          <ion-grid>
+            <ion-row>
+              <ion-col (click)="openMenu('startPage')" col-12>
+                <div class="block-menu">
+                  <div class="home-icon" >
+                    <ion-icon name="timer-outline"></ion-icon>
+                  </div>
+                  <div class="home-text-icon">Start</div>
+                </div>
+              </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col (click)="openMenu('stopPage')" col-12>
+                  <div class="block-menu">
+                    <div class="home-icon">
+                      <ion-icon name="stopwatch-outline"></ion-icon>
+                    </div>
+                    <div class="home-text-icon">Stop</div>
+                  </div>
+                </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col (click)="openMenu('uploadPage')" col-12>
+                    <div class="block-menu">
+                      <div class="home-icon">
+                        <ion-icon name="cloud-upload-outline"></ion-icon>
+                      </div>
+                      <div class="home-text-icon">Upload</div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+                <ion-row>
+                  <ion-col (click)="openMenu('resultPage')" col-12>
+                    <div class="block-menu">
+                      <div class="home-icon">
+                        <ion-icon name="clipboard-outline"></ion-icon>
+                      </div>
+                      <div class="home-text-icon">Test result</div>
+                    </div>
+                  </ion-col>
+                </ion-row>
+          <div style="margin-top:10px;"></div>
+        </ion-grid>
+        </div>
+
+             
+        
+  <!-- this fab is placed at bottom right -->
+  
+  </ion-content>
+  <ion-footer>
+    <div style="height:6px;background-color: red;"></div>
+  </ion-footer>

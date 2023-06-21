@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-row>
+    <ion-col col-2 style="text-align: center;">
+      <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    </ion-col>
+    <ion-col col-10 style="padding-top:10px;padding-bottom:10px;font-size:10px;background-color: white;">
+        <div style="border-radius: 4px;height:43px;padding-top:8px;text-align:center;color:white;font-size:18px;background-color: #f53d3d;"><strong>IBQS SCAN TRIGGER V.1.0</strong></div>
+  </ion-col>
+</ion-row>
+
+  <div style="margin-top:0px;padding-top:0px;" class="block-package">
+
+  </div>
+  </ion-header>
+
+  <ion-content>
+  
+      <ion-refresher (ionRefresh)="doRefresh($event)">
+          <ion-refresher-content></ion-refresher-content>
+        </ion-refresher>
+                <ion-grid>
+                   
+                  <div style="margin-top:10px;"></div> 
+             
+              
+                      <div class ="btn-date">
+                          <ion-item no-lines>
+                            <ion-label>วันที่</ion-label>
+                            <ion-datetime min="2016" displayFormat="DD-MM-YYYY" [(ngModel)]="date_selected">
+                            </ion-datetime>
+                          </ion-item>
+                        </div>
+                
+                
+                      <div class ="btn-date">
+                          <ion-item no-lines>
+                            <ion-label>เวลา</ion-label>
+                            <ion-datetime displayFormat="HH:mm:ss" [(ngModel)]="time_selected">
+                            </ion-datetime>
+                          </ion-item>
+                        </div>
+                 
+
+                </ion-grid>
+             
+
+  <!-- this fab is placed at bottom right -->
+  
+  </ion-content>
+  <ion-footer>
+    <div style="height:6px;background-color: red;"></div>
+    <div (click)="scanPage()" class="btn-sl">Upload</div>
+
+  </ion-footer>

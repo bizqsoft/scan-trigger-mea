@@ -1,0 +1,38 @@
+<ion-header>
+
+</ion-header>
+<ion-content class="card-background-page" text-end>
+  <div padding style="margin-top:140px;">
+
+      <div [ngSwitch]="loginTab">
+          <ion-list >
+      <ion-card>
+        <ion-item>
+          <div>
+            <img style="margin:auto;width: 120px;" src="assets/img/logo.png">
+          </div>
+          
+        </ion-item>
+        <ion-card-header>
+          เข้าสู่ระบบ
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list>
+            <ion-item>
+              <ion-input [(ngModel)]="username"  type="text" placeholder="ชื่อผู้ใช้งาน"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input [(ngModel)]="password"  type="password" placeholder="รหัสผ่าน"></ion-input>
+            </ion-item>
+            <div><button ion-button (click)="login()">เข้าสู่ระบบ</button></div>
+            <div style="font-size: 12px;color:red;">{{status}}</div>
+            <div style="margin-top:20px;" class="text-top">{{sysName}} {{sysVersion}} By <a href="https://ssj.co.th">SSJ TECHNOLOGY CO.,LTD.</a></div>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+
+    </div>
+    
+  </div>
+</ion-content>

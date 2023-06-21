@@ -1,1 +1,36 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+        <ion-item *ngIf="picture">
+            <ion-avatar item-start>
+                <img src="{{sysPath}}/picture/operator/{{picture}}">
+            </ion-avatar>
+            <h2 (click)="openPageProfile()">{{displayname}}</h2>
+            <p>รหัส {{code}} ตำแหน่ง {{position}}</p>
+          </ion-item> 
+          <button ion-item (click)="pageHome()" *ngIf="haslogin">
+            <ion-icon name="home"></ion-icon> หน้าหลัก
+          </button>
+      <button ion-item (click)="pageLogin()" *ngIf="!haslogin">
+        <ion-icon name="lock"></ion-icon> เข้าสู่ระบบ
+      </button>
+      <button ion-item (click)="pageLogout()" *ngIf="haslogin">
+        <ion-icon name="log-out"></ion-icon> ออกจากระบบ
+      </button>
+      <button ion-item menuClose>
+        <ion-icon name="close"></ion-icon> ปิดเมนู</button>
+        <div style="padding:4px;font-size:12px; text-align:right;">
+          {{sysName}} {{sysVersion}}
+        </div>
+    
+    </ion-list>
+   
+
+  </ion-content>
+</ion-menu>
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>

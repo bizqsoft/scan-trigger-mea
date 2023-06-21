@@ -1,5 +1,13 @@
 {
-  "name": "scicatalogplus",
-  "app_id": "",
-  "type": "ionic-angular"
+  "name": "easycarecare",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://www.easycarcare.net/api/"
+    }
+  ]
 }

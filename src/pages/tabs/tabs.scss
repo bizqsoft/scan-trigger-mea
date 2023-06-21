@@ -1,0 +1,23 @@
+ion-icon {
+    &[class*="custom-"] {
+        margin: 0 5px 0 0;
+        vertical-align: middle;
+        $sz: 20px;
+        width: $sz;
+        height: $sz;
+    } // custom icons
+    &[class*="home"] {
+        background: url(../../assets/img/custom-icons/home.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    &[class*="add"] {
+        background: url(../../assets/img/custom-icons/plus.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+    &[class*="task"] {
+        background: url(../../assets/img/custom-icons/task.png) no-repeat 50% 50%;
+        background-size: contain;
+    }
+}
+
+

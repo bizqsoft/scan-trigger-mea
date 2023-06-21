@@ -1,0 +1,62 @@
+page-login {
+.card-background-page {
+
+     background-image: url('../../assets/img/bg-15.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-size: 1600px 1400px;
+     
+    h1{
+         font-size:52px;
+         margin-top:60px;
+     }
+    .marginTop{
+            margin-top:80px;
+    }
+
+}
+    
+    .marginTop{
+            margin-top:150px;
+        }
+
+.item.item-input {
+    background-color: transparent;
+    
+}
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 2px;
+  margin: 8px 0;
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid red;
+  font-size:14px;
+  border-radius: 25px;
+  }
+
+  input[type=password] {
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-size:14px;
+    border-radius: 25px;
+  }
+
+  input[type=number] {
+    width: 100%;
+    padding: 12px 2px;
+    margin: 8px 0;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid red;
+    font-size:14px;
+    border-radius: 25px;
+  }
+
+}
